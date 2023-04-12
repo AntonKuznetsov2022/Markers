@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Markers</string>
+    <string name="myLocation">Моя локация</string>
+    <string name="myMarkers">Мои маркеры</string>
+    <string name="errorLocation">Локация пользователя не найдена</string>
+    <string name="description_location_menu">Меню локации</string>
+    <string name="menu_edit">Изменить</string>
+    <string name="menu_remove">Удалить</string>
+    <string name="access_to_geo">Необходимо разрешить геолокацию</string>
+    <string name="permission">Получить доступ</string>
+</resources>

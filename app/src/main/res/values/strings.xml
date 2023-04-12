@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Markers</string>
+    <string name="myLocation">My location</string>
+    <string name="myMarkers">My markers</string>
+    <string name="errorLocation">Location can\'t be find</string>
+    <string name="description_location_menu">Location menu</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_remove">Remove</string>
+    <string name="access_to_geo">Need access to geolocation</string>
+    <string name="permission">Permission</string>
+
+</resources>

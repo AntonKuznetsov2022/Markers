@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indent">16dp</dimen>
+    <dimen name="indent_count">8dp</dimen>
+    <dimen name="checkbox_padding_start">8dp</dimen>
+    <dimen name="icon_button_min_size">24dp</dimen>
+    <dimen name="icon_size_48">48dp</dimen>
+</resources>
