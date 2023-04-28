@@ -8,5 +8,10 @@
     <string name="menu_edit">Изменить</string>
     <string name="menu_remove">Удалить</string>
     <string name="access_to_geo">Необходимо разрешить геолокацию</string>
-    <string name="permission">Получить доступ</string>
+    <string name="permission">Требуется предоставить доступ</string>
+    <string name="enter_name">Введите название точки</string>
+    <string name="name">Название</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Ок</string>
+    <string name="new_place">Новое место</string>
 </resources>

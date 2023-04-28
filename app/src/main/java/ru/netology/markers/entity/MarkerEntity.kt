@@ -2,7 +2,6 @@ package ru.netology.markers.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.yandex.mapkit.geometry.Point
 import ru.netology.markers.dto.Marker
 
 @Entity
@@ -13,15 +12,11 @@ data class MarkerEntity(
     val longitude: Double,
     val name: String,
 ) {
-    fun toDto() = Marker(id, Point(latitude, longitude), name)
-
     companion object {
-        fun fromDto(dto: Marker) =
-            MarkerEntity(
-                dto.id,
-                dto.Point.latitude,
-                dto.Point.longitude,
-                dto.name,
-            )
+        fun fromDto(dto: Marker): MarkerEntity = with(dto) {
+            MarkerEntity(id = id, latitude = latitude, longitude = longitude, name = name)
+        }
     }
+
+    fun toDto(): Marker = Marker(id = id, latitude = latitude, longitude = longitude, name = name)
 }

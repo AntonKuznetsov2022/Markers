@@ -18,27 +18,27 @@ interface OnInteractionListener {
 
 class MarkerAdapter(
     private val onInteractionListener: OnInteractionListener,
-) : ListAdapter<Marker, PostViewHolder>(PostDiffCallback()) {
+) : ListAdapter<Marker, MarkerViewHolder>(PostDiffCallback()) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MarkerViewHolder {
         val binding = (MarkerBinding.inflate(LayoutInflater.from(parent.context), parent, false))
-        return PostViewHolder(binding, onInteractionListener)
+        return MarkerViewHolder(binding, onInteractionListener)
     }
 
-    override fun onBindViewHolder(holder: PostViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MarkerViewHolder, position: Int) {
         val post = getItem(position)
         holder.bind(post)
     }
 }
 
-class PostViewHolder(
+class MarkerViewHolder(
     private val binding: MarkerBinding,
     private val onInteractionListener: OnInteractionListener,
 ) : RecyclerView.ViewHolder(binding.root) {
     fun bind(marker: Marker) {
         binding.apply {
-            longitude.text = marker.Point.longitude.toString().take(10)
-            latitude.text = marker.Point.latitude.toString().take(10)
+            longitude.text = marker.longitude.toString().take(10)
+            latitude.text = marker.latitude.toString().take(10)
             nameMarker.text = marker.name
 
             root.setOnClickListener {

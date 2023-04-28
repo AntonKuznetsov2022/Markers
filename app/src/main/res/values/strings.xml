@@ -8,5 +8,9 @@
     <string name="menu_remove">Remove</string>
     <string name="access_to_geo">Need access to geolocation</string>
     <string name="permission">Permission</string>
-
+    <string name="enter_name">Enter name</string>
+    <string name="name">Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="new_place">New place</string>
 </resources>

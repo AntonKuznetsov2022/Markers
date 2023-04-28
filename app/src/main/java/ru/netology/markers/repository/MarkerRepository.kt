@@ -7,6 +7,4 @@ interface MarkerRepository {
     fun get(): LiveData<List<Marker>>
     fun save(marker: Marker)
     fun removeById(id: Long)
-    fun getMarker() : Long
-    fun getById(id: Long) : Marker
 }
